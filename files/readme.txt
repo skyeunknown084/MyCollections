@@ -1,0 +1,1 @@
+Files should be deleted by cronjob every day 
