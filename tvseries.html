@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="MyCollectionsSite">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
@@ -44,6 +44,12 @@
     <link href="vendors/fullcalendar/dist/fullcalendar.print.css" rel="stylesheet" media="print">
     <!-- Custom Theme Style -->
     <link href="build/css/custom.min.css" rel="stylesheet">
+
+    <!-- ANGULARJS -->
+    <script type="text/javascript" src="angularjs/ngmodules/angular.min.js"></script>
+    <script>
+      var MyCollectionsSite = angular.module('MyCollectionsSite', []);
+    </script>
   </head>
 
   <body class="nav-md">

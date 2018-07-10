@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="MyCollectionsSite">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
@@ -20,9 +20,15 @@
 
     <!-- Custom Theme Style -->
     <link href="build/css/custom.min.css" rel="stylesheet">
+
+    <!-- ANGULARJS -->
+    <script type="text/javascript" src="angularjs/ngmodules/angular.min.js"></script>
+    <script>
+      var MyCollectionsSite = angular.module('MyCollectionsSite', []);
+    </script>
   </head>
 
-  <body class="login">
+  <body class="login" ng-controller="loginCtrl">
     <div>
       <a class="hiddenanchor" id="signup"></a>
       <a class="hiddenanchor" id="signin"></a>
@@ -54,8 +60,8 @@
                 <br />
 
                 <div>
-                  <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
-                  <p>©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
+                  <h1><i class="fa fa-paw"></i> My Collections!</h1>
+                  <p>©2018 All Rights Reserved. My Collections! is a Private Website. Invitations are needed. Privacy and Terms</p>
                 </div>
               </div>
             </form>
@@ -90,8 +96,8 @@
                 <br />
 
                 <div>
-                  <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
-                  <p>©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
+                  <h1><i class="fa fa-paw"></i> My Collections!</h1>
+                  <p>©2018 All Rights Reserved. My Collections! is a Private Website. Invitations are needed. Privacy and Terms</p>
                 </div>
               </div>
             </form>
@@ -99,5 +105,8 @@
         </div>
       </div>
     </div>
+
+    <!-- ANGULARJS_SCRIPT -->
+    <script type="text/javascript" src="angularjs/LoginPage/loginCtrl.js"></script>
   </body>
 </html>
